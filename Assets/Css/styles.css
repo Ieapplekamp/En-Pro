@@ -1,12 +1,12 @@
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
 
 
-body{
+body {
   background-color: rgb(29,29,29);
   font-family: Montserrat;
-  
 }
 
+/* Particle Javascript */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -14,6 +14,7 @@ body{
     z-index: -1;
 }
 
+/* Text Animations Start */
 svg {
     display: block;
     font: 11.5em 'Montserrat';
@@ -58,9 +59,10 @@ svg {
 }
 
 @keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+    100% {stroke-dashoffset: -35%;}
 }
-
+/* Text Animations End */
+  
 .bg-dark {
     background-color: rgb(29,29,29)!important;
 }
@@ -72,10 +74,9 @@ svg {
 
 .dropdown-item {
     padding: 1.5%;
-    color: #ffffff;
+    color: rgba(255,255,255,.5);
 }
 .dropdown-item:hover {
     background-color: rgb(29,29,29);
-    opacity: .5;
     color: #ffffff;
 }
