@@ -3,8 +3,7 @@
   "particles": {
 
     "number": {
-      "value": 50,
-      "limit": 50,
+      "value": 75,
       "density": {
         "enable": true,
         "value_area": 1500
