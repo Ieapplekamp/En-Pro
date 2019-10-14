@@ -1,5 +1,8 @@
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     width: 100%;
@@ -17,7 +20,10 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
+}
+header {
+    z-index: -3
 }
 
 /* Text Animations Start */
@@ -90,8 +96,6 @@ svg {
 
 /* Image Slide Show */
 .carousel-item {
-    /* padding-top: 20px; */
-    /* z-index: -1; */
     margin-top: 105vh;
     height: 65vh;
     min-height: 350px;
@@ -103,14 +107,12 @@ svg {
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
     margin-top: 100vh;
-    /* height: 10px; */
 }
 
 
 
 /* Section/About */
 .trial {
-    /* padding-top: 105vh; */
     margin-top: 5%;
     padding-bottom: 10%;
     height: 100%;
