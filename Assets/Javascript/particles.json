@@ -61,7 +61,7 @@
 
     "interactivity": {
 
-      "detect_on": "canvas",
+      "detect_on": "window",
 
       "events": {
         "onhover": {
@@ -70,7 +70,7 @@
         },
         "onclick": {
           "enable": true,
-          "mode": "bubble"
+          "mode": "push"
         },
         "resize": true
       },
@@ -85,6 +85,6 @@
       }
 
     }
-    
+
   }
 }
