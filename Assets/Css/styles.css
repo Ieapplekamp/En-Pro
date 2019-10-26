@@ -10,9 +10,9 @@ body {
     background-color: rgb(40,44,47);
     font-family: Montserrat;
 }
-/* .header {
-    width: 100%;
-    height: 100vh;
+/* header {
+   background-image: url('../Images/thought2.png');
+   background-size: 200vh;
 } */
 
 /* Particle Javascript */
@@ -20,17 +20,17 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 2;
    
 }
 
 /* Text Animations Start */
 svg {
-    display: block;
+    /* display: block; */
     font: 11.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
+    width: 250px;
+    /* height: 100px; */
+    /* margin: 0 auto; */
     
 }
 
@@ -44,27 +44,27 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #800086;
+	stroke: #4B4BBC;                    /* #ffffff; */
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #4B4BBC;
+	stroke: #4B4BBC;                            /* #e3e3e3; */
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #0073DC;
+	stroke: #0073DC;                            /* #b6b6b6; */
 	animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-	stroke: #0092E4;
+	stroke: #0092E4;                              /* #8b8b8b; */
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #00C4BF;
+	stroke: #00C4BF;                               /* #5a5959; */
 	animation-delay: -5s;
 }
 
@@ -119,8 +119,6 @@ svg {
     
 }
 
-footer {
-    position: static;
-    position: bottom;
-}
+
+
 
