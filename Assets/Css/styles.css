@@ -3,25 +3,26 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    width: 100%;
-    height: 100%;
-    background-color: #7f5a83;
-    background-image: linear-gradient(90deg, #7f5a83 0%, #0d324d 100%);
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgb(40,44,47);
     font-family: Montserrat;
 }
 
 
 /*----------------- Nav Menu ---------------*/
-
+.navbar {
+    border-bottom: 5px solid rgb(29,29,29);
+}
 .bg-dark {
-    background-color: rgb(40,44,47)!important;
+    background-color: rgb(29,29,29)!important;
 }
 .dropdown-menu {
     /* padding-top: 10%; */
     /* padding-right: 15%; */
     margin-top: 13%;
     color: #ffffff;
-    background-color: rgb(40,44,47, 0.5);
+    background-color: rgb(29,29,29);
     border: none;
 }
 
@@ -82,28 +83,31 @@ svg {
 /* ------------ Nav Menu End --------------------*/
 
 
+
 /*---------------- Header Section ---------------*/
 /* ---Particle Javascript ---*/
-
+header {
+    height: 100vh;;
+}
 #particles-js {
-    position: absolute;
-    /* background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); */
-    width: 100%;
-    height: 100%;
+    /* position: absolute; */
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    /* width: 200vh; */
+    /* height: 100vh; */
     z-index: 2;
+    
 }
 
 .header-wrapper {
-    /* opacity: .5; */
+    
+    opacity: .5;
     position: absolute;
-    width: 40%;
-    height: 40%;
-    display: flex;
-    align-items: center;
+    width: 50%;
+    height: 50%;
+    
     background-color: rgb(40,44,47, .5);
-    margin-left: 30%;
-    margin-top: 15%;
+    margin-left: 25%;
     color: white;
 }
 
@@ -111,35 +115,32 @@ svg {
 /* --------------Image Slide Show -------------------*/
 
 .carousel-item {
-    margin-top: 105vh;
+    /* margin-top: 105vh; */
     height: 100vh;
     min-height: 350px;
-    background: rgb(40,44,47) no-repeat center center scroll;
+    background: rgb(40,44,52) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+/* .carousel-control-next-icon, .carousel-control-prev-icon {
     margin-top: 100vh;
-}
+} */
 
 
 
 /* ------------------Section/About -----------------*/
 
-.about-section {
-    width: 100vh;
+#about-section {
+    background-color: rgb(33,37,43);
+    /* width: 100vh; */
 }
 
 .about-container {
-    /* background-color: navy; */
     padding: 5%;
-    margin-top: 5%;
-    margin-bottom: 4%;
-    /* height: 100%; */
-    /* width: 100vh; */
+    /* margin-top: 5%; */
+    /* margin-bottom: 4%; */
     color: #ffffff;
-    
 }
