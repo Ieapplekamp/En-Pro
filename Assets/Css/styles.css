@@ -1,37 +1,48 @@
 /* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(40,44,47);
+    background-color: #7f5a83;
+    background-image: linear-gradient(90deg, #7f5a83 0%, #0d324d 100%);
     font-family: Montserrat;
 }
-/* header {
-   background-image: url('../Images/thought2.png');
-   background-size: 200vh;
-} */
 
-/* Particle Javascript */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-   
+
+/*----------------- Nav Menu ---------------*/
+
+.bg-dark {
+    background-color: rgb(40,44,47)!important;
+}
+.dropdown-menu {
+    /* padding-top: 10%; */
+    /* padding-right: 15%; */
+    margin-top: 13%;
+    color: #ffffff;
+    background-color: rgb(40,44,47, 0.5);
+    border: none;
 }
 
-/* Text Animations Start */
+.dropdown-item {
+    padding-top: 2%;
+    color: rgba(255,255,255,.5);
+}
+.dropdown-item:hover {
+    background-color: rgb(40,44,47, 0.5);
+    color: #ffffff;
+}
+
+
+/* ------------ Text Animations Start ------------*/
+
 svg {
     /* display: block; */
     font: 11.5em 'Montserrat';
     width: 250px;
     /* height: 100px; */
     /* margin: 0 auto; */
-    
 }
 
 .text-copy {
@@ -47,22 +58,18 @@ svg {
 	stroke: #4B4BBC;                    /* #ffffff; */
 	animation-delay: -1;
 }
-
 .text-copy:nth-child(2){
-	stroke: #4B4BBC;                            /* #e3e3e3; */
+	stroke: #00C4BF;                            /* #e3e3e3; */
 	animation-delay: -2s;
 }
-
 .text-copy:nth-child(3){
 	stroke: #0073DC;                            /* #b6b6b6; */
 	animation-delay: -3s;
 }
-
 .text-copy:nth-child(4){
 	stroke: #0092E4;                              /* #8b8b8b; */
 	animation-delay: -4s;
 }
-
 .text-copy:nth-child(5){
 	stroke: #00C4BF;                               /* #5a5959; */
 	animation-delay: -5s;
@@ -71,54 +78,68 @@ svg {
 @keyframes stroke-offset{
     100% {stroke-dashoffset: -35%;}
 }
-/* Text Animations End */
+/* ----------- Text Animations End --------------*/
+/* ------------ Nav Menu End --------------------*/
 
-/* Nav Menu */
-.bg-dark {
-    background-color: rgb(40,44,47)!important;
-}
-.dropdown-menu {
-    color: #ffffff;
-    background-color: rgb(40,44,47);
-    border: none;
-}
 
-.dropdown-item {
-    padding: 1.5%;
-    color: rgba(255,255,255,.5);
-}
-.dropdown-item:hover {
-    background-color: rgb(40,44,47);
-    color: #ffffff;
+/*---------------- Header Section ---------------*/
+/* ---Particle Javascript ---*/
+
+#particles-js {
+    position: absolute;
+    /* background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%); */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
-/* Image Slide Show */
+.header-wrapper {
+    /* opacity: .5; */
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40,44,47, .5);
+    margin-left: 30%;
+    margin-top: 15%;
+    color: white;
+}
+
+
+/* --------------Image Slide Show -------------------*/
+
 .carousel-item {
     margin-top: 105vh;
-    height: 65vh;
+    height: 100vh;
     min-height: 350px;
-    background: no-repeat center center scroll;
+    background: rgb(40,44,47) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     margin-top: 100vh;
 }
 
 
 
-/* Section/About */
-.trial {
+/* ------------------Section/About -----------------*/
+
+.about-section {
+    width: 100vh;
+}
+
+.about-container {
+    /* background-color: navy; */
+    padding: 5%;
     margin-top: 5%;
-    padding-bottom: 10%;
-    height: 100%;
-    width: 100%;
+    margin-bottom: 4%;
+    /* height: 100%; */
+    /* width: 100vh; */
     color: #ffffff;
     
 }
-
-
-
-
