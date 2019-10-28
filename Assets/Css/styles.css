@@ -104,7 +104,8 @@ header {
 }
 
 .header-wrapper {
-    /* cursor: default; */
+    cursor: default;
+    /* z-index: 2; */
     /* opacity: .8; */
     position: absolute;
     width: 50%;
@@ -137,8 +138,13 @@ header {
 
 /* ------------------Section/About -----------------*/
 #particles-js2 {
+    /* cursor: grab; */
+    height: 100vh;
+    background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
+    color: #fff;
     /* opacity: .1; */
-    /* z-index: 8; */
+    z-index: 8;
     /* position: absolute; */
 }
 
@@ -146,14 +152,25 @@ img {
     width: 100%;
 }
 #about-section {
-    padding: 5%;
+    cursor: grab;
+    display: flex;
+    
+    justify-content: center;
+    /* padding: 5%; */
     /* z-index: -8; */
     /* position: inherit; */
-    /* background-color: rgb(33,37,43); */
-    background: rgb(29,29,29);
-    background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
+    background-color: rgba(40,44,47, 0.5);
+    /* background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% ); */
     color: #ffffff;
     /* width: 100vh; */
+}
+
+.test {
+    position: absolute;
+    padding: 5%;
+    /* background: rgb(29,29,29); */
+    background-color: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
 }
 
 
