@@ -89,10 +89,20 @@ svg {
 header {
     height: 100vh;;
 }
+.header-text {
+    font-size: 3em;
+}
+.header-icons i {
+    padding: .5%;
+    font-size: 30px;
+    color: #fff;
+}
+
 #particles-js {
+    cursor: grab;
     /* position: absolute; */
-    background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgba(29,29,29,1) 10%, rgba(33,37,43,1) 100%);
     /* width: 200vh; */
     /* height: 100vh; */
     z-index: 2;
@@ -100,13 +110,13 @@ header {
 }
 
 .header-wrapper {
-    
-    opacity: .5;
+    cursor: default;
+    opacity: .8;
     position: absolute;
     width: 50%;
     height: 50%;
     
-    background-color: rgb(40,44,47, .5);
+    /* background-color: rgb(40,44,47, .5); */
     margin-left: 25%;
     color: white;
 }
