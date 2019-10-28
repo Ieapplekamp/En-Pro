@@ -104,7 +104,7 @@ header {
 }
 
 .header-wrapper {
-    cursor: default;
+    /* cursor: default; */
     /* opacity: .8; */
     position: absolute;
     width: 50%;
