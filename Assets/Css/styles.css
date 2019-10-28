@@ -88,7 +88,10 @@ svg {
 /*---------------- Header Section ---------------*/
 /* ---Particle Javascript ---*/
 header {
-    height: 100vh;;
+    cursor: grab;
+    background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgba(29,29,29,1) 30%, rgba(33,37,43,1) 95%);
+    height: 100vh;
 }
 .header-text {
     font-size: 3em;
@@ -98,17 +101,6 @@ header {
     padding: .5%;
     font-size: 30px;
     color: #fff;
-}
-
-#particles-js {
-    cursor: grab;
-    /* position: absolute; */
-    background: rgb(29,29,29);
-    background: linear-gradient(0deg, rgba(29,29,29,1) 30%, rgba(33,37,43,1) 95%);
-    /* width: 200vh; */
-    /* height: 100vh; */
-    z-index: 2;
-    
 }
 
 .header-wrapper {
@@ -144,17 +136,34 @@ header {
 
 
 /* ------------------Section/About -----------------*/
+#particles-js2 {
+    /* opacity: .1; */
+    /* z-index: 8; */
+    /* position: absolute; */
+}
 
+img {
+    width: 100%;
+}
 #about-section {
+    padding: 5%;
+    /* z-index: -8; */
+    /* position: inherit; */
     /* background-color: rgb(33,37,43); */
     background: rgb(29,29,29);
     background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
+    color: #ffffff;
     /* width: 100vh; */
 }
 
-.about-container {
-    padding: 5%;
-    /* margin-top: 5%; */
-    /* margin-bottom: 4%; */
-    color: #ffffff;
+
+.about-me {
+    padding: 4%;
+    display: flex;
+  /* flex-direction: row-reverse; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  /* width: 100%; */
 }
+
