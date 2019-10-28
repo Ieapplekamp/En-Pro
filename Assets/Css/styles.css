@@ -57,23 +57,23 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #4B4BBC;                    /* #ffffff; */
+	stroke: #ff4681;                    /* #ffffff; */
 	animation-delay: -1;
 }
 .text-copy:nth-child(2){
-	stroke: #00C4BF;                            /* #e3e3e3; */
+	stroke: #ff4681;                            /* #e3e3e3; */
 	animation-delay: -2s;
 }
 .text-copy:nth-child(3){
-	stroke: #0073DC;                            /* #b6b6b6; */
+	stroke: #ff4681;                            /* #b6b6b6; */
 	animation-delay: -3s;
 }
 .text-copy:nth-child(4){
-	stroke: #0092E4;                              /* #8b8b8b; */
+	stroke: #ff4681;                              /* #8b8b8b; */
 	animation-delay: -4s;
 }
 .text-copy:nth-child(5){
-	stroke: #00C4BF;                               /* #5a5959; */
+	stroke: #ff4681;                               /* #5a5959; */
 	animation-delay: -5s;
 }
 
@@ -90,7 +90,7 @@ svg {
 header {
     cursor: grab;
     background: rgb(29,29,29);
-    background: linear-gradient(0deg, rgba(29,29,29,1) 30%, rgba(33,37,43,1) 95%);
+    background: linear-gradient(-350deg, rgba(29,29,29,1) 30%, rgba(33,37,43,1) 95%);
     height: 100vh;
 }
 .header-text {
@@ -138,21 +138,22 @@ header {
 
 /* ------------------Section/About -----------------*/
 #particles-js2 {
-    /* cursor: grab; */
+    cursor: grab;
     height: 100vh;
     background: rgb(29,29,29);
-    background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
+    background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
     color: #fff;
     /* opacity: .1; */
-    z-index: 8;
+    z-index: 20;
     /* position: absolute; */
 }
 
 img {
     width: 100%;
+    margin-bottom: 2%;
 }
 #about-section {
-    cursor: grab;
+    /* cursor: grab; */
     display: flex;
     
     justify-content: center;
@@ -173,10 +174,13 @@ img {
     background-color: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% );
 }
 div.about-me {
-    border-radius: 0;
-    background-color: rgba(20,20,20,.7);
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: rgba(20,20,20,.8);
 }
-
+.about-me:hover i {
+    color: #ff4681;
+}
 
 .about-me {
     padding: 4%;
