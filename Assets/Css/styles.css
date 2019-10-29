@@ -150,7 +150,7 @@ header {
     background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
     color: #fff;
     /* opacity: .1; */
-    z-index: 20;
+    z-index: 0;
     /* position: absolute; */
 }
 
@@ -159,14 +159,15 @@ img {
     margin-bottom: 2%;
 }
 #about-section {
-    /* cursor: grab; */
+    z-index: 0;
+    cursor: default;
     display: flex;
     
     justify-content: center;
     /* padding: 5%; */
     /* z-index: -8; */
     /* position: inherit; */
-    background-color: rgba(40,44,47, 0.5);
+    /* background-color: rgba(40,44,47, 1); */
     /* background: rgb(29,29,29);
     background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% ); */
     color: #ffffff;
@@ -182,7 +183,7 @@ img {
 div.about-me {
     margin-bottom: 2%;
     border-radius: 10px;
-    background-color: rgba(20,20,20,.8);
+    background-color: rgba(22,22,22,.8);
 }
 .about-me:hover i {
     color: #ff4681;
