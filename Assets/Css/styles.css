@@ -8,18 +8,28 @@ body {
     background-color: rgb(40,44,47);
     font-family: Montserrat;
 }
-
+/* a, .animated.hinge {
+    animation-duration: 2s;
+    animation-delay: ;
+    animation-iteration-count: 30;
+  } */
+  /* @keyframes hinge {
+      20%, 100% {
+        transform: translate(200px, 0);
+      }
+  } */
 /*----------------- Nav Menu ---------------*/
-/* .navbar {
-    border-bottom: 5px solid transparent;
-} */
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff4681; 
+}
+
 .bg-dark {
     background: rgb(29,29,29)!important;
 /* background: linear-gradient(0deg, rgba(33,37,43,1) 0%, rgba(29,29,29,1) 30%)!important; */
 }
 .dropdown-menu {
-    /* padding-top: 10%; */
-    /* padding-right: 15%; */
+    
     margin-top: 13%;
     color: #ffffff;
     background-color: rgb(29,29,29);
@@ -39,11 +49,8 @@ body {
 /* ------------ Text Animations Start ------------*/
 
 svg {
-    /* display: block; */
     font: 11.5em 'Montserrat';
     width: 250px;
-    /* height: 100px; */
-    /* margin: 0 auto; */
 }
 
 .text-copy {
@@ -93,10 +100,14 @@ header {
     height: 100vh;
 }
 .header-text {
+    padding: 2%;
+    line-height: 1.3em;
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 800;
+    /* margin-bottom: 2%; */
 }
 .header-icons i {
+    margin-top: 10%;
     padding: .5%;
     font-size: 30px;
     color: #fff;
@@ -109,7 +120,6 @@ header {
     position: absolute;
     width: 50%;
     height: 50%;
-    /* z-index: 0; */
     /* background-color: rgb(40,44,47, .5); */
     margin-left: 25%;
     color: white;
@@ -129,9 +139,6 @@ header {
     background-size: cover;
 }
 
-/* .carousel-control-next-icon, .carousel-control-prev-icon {
-    margin-top: 100vh;
-} */
 
 
 
