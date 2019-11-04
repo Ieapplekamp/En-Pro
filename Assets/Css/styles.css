@@ -132,7 +132,9 @@ header {
     /* margin-top: 105vh; */
     height: 100vh;
     min-height: 350px;
-    background: rgb(40,44,52) no-repeat center center scroll;
+    background: rgb(29,29,29) no-repeat center center scroll;
+    background: linear-gradient(350deg, rgba(29,29,29,1) 20%, rgba(33,37,43,1)  88% );
+    /* background: rgb(40,44,52) ; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -199,3 +201,6 @@ div.about-me {
   /* width: 100%; */
 }
 
+iframe {
+    border-radius: 60px;
+}
