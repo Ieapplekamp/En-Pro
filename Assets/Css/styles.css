@@ -8,16 +8,7 @@ body {
     background-color: rgb(40,44,47);
     font-family: Montserrat;
 }
-/* a, .animated.hinge {
-    animation-duration: 2s;
-    animation-delay: ;
-    animation-iteration-count: 30;
-  } */
-  /* @keyframes hinge {
-      20%, 100% {
-        transform: translate(200px, 0);
-      }
-  } */
+
 /*----------------- Nav Menu ---------------*/
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -26,7 +17,6 @@ body {
 
 .bg-dark {
     background: rgb(29,29,29)!important;
-/* background: linear-gradient(0deg, rgba(33,37,43,1) 0%, rgba(29,29,29,1) 30%)!important; */
 }
 .dropdown-menu {
     
@@ -144,7 +134,14 @@ header {
     z-index: 1;
 } */
 
+iframe {
+    border-radius: 60px;
+}
 
+.gist-data {
+    height: 25%;
+    width: 100%; 
+}
 
 
 /* ------------------Section/About -----------------*/
@@ -167,16 +164,8 @@ img {
     z-index: 0;
     cursor: default;
     display: flex;
-    
     justify-content: center;
-    /* padding: 5%; */
-    /* z-index: -8; */
-    /* position: inherit; */
-    /* background-color: rgba(40,44,47, 1); */
-    /* background: rgb(29,29,29);
-    background: linear-gradient(0deg, rgba(33,37,43,1) 30%, rgba(29,29,29,1) 85% ); */
     color: #ffffff;
-    /* width: 100vh; */
 }
 
 .test {
@@ -201,9 +190,4 @@ div.about-me {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-  /* width: 100%; */
-}
-
-iframe {
-    border-radius: 60px;
 }
