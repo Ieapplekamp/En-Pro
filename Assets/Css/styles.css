@@ -195,6 +195,46 @@ div.about-me {
     justify-content: center;
     flex-wrap: nowrap;
 }
-@media only screen and (max-width: 935px) {
 
+@media only screen and (max-width: 935px) {
+    .col-7 {
+        max-width: 90%;
+        margin-left: 5%;
+    }
 }
+@media only screen and (max-width: 840px) {
+    #particles-js2 {
+        height: 170vh;
+    }
+    .newRow {
+        display: inline;
+    }
+    .col-8 {
+        max-width: 100%;
+    }
+    .col-4 {
+        max-width: 60%;
+        margin: auto;
+        padding: 2%;
+    }
+    .mt-5 {
+        margin-top: 0!important;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .header-wrapper {
+        height: 90%;
+    }
+    .header-text {
+        font-size: 2.7em;
+    }
+    .header-icons i {
+        margin-top: 0;        
+    }
+}
+/* @media only screen and (max-width: 569px) {
+    .col-4 {
+        max-width: 70%;
+    }
+} */
