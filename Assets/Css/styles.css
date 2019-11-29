@@ -154,7 +154,7 @@ header {
 
 /* ------------------Section/About -----------------*/
 #particles-js2 {
-    cursor: grab;
+    /* cursor: grab; */
     height: 100vh;
     background: rgb(29,29,29);
     background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
@@ -194,4 +194,7 @@ div.about-me {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+}
+@media only screen and (max-width: 935px) {
+
 }
