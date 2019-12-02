@@ -8,6 +8,10 @@ body {
     background-color: rgb(40,44,47);
     font-family: Montserrat;
 }
+section {
+    background: rgb(29,29,29);
+    background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
+}
 
 /*----------------- Nav Menu ---------------*/
 
@@ -121,43 +125,24 @@ header {
 .githubIcons:hover {
     color: #ff4681;
 }
-#bamazon {
+/* #bamazon {
     padding-left: 10px;
     padding-right: 2px;
     width: 640px;
     height: 525px;
-}
-
-.carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: rgb(29,29,29) no-repeat center center scroll;
-    background: linear-gradient(350deg, rgba(29,29,29,1) 20%, rgba(33,37,43,1)  88% );
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-/* .carousel-control-prev {
-    z-index: 1;
 } */
 
-/* iframe {
-    border-radius: 60px;
-} */
 
-/* .gist-data {
-    height: 25%;
-    width: 100%; 
-} */
+
 
 
 /* ------------------Section/About -----------------*/
 #particles-js2 {
     /* cursor: grab; */
-    height: 100vh;
-    background: rgb(29,29,29);
-    background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
+    height: 200vh;
+    width: 100vw;
+    /* background: rgb(29,29,29);
+    background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% ); */
     color: #fff;
     z-index: 0;
 }
@@ -194,6 +179,10 @@ div.about-me {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+}
+
+iframe {
+    border-radius: 6%;
 }
 
 @media only screen and (max-width: 935px) {
