@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -129,7 +130,7 @@ section {
 }
 
 #particles-js2 {
-    height: 207vh;
+    height: 225vh;
     width: 100vw;
     color: #fff;
     z-index: 0;
@@ -165,6 +166,7 @@ div.about-me {
 }
 
 .about-me {
+    line-height: 1.2em;
     padding: 4%;
     display: flex;
     align-items: center;
