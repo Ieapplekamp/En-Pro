@@ -8,12 +8,17 @@ body {
     font-family: Montserrat;
 }
 
+a {
+    color: white;
+}
+
 .pink {
     color: #ff4681; 
 }
 
 a:hover {
     text-decoration: none;
+    color: #ff4681;
 }
 
 
@@ -27,7 +32,7 @@ a:hover {
 }
 
 .dropdown-menu {
-    margin-top: 13%;
+    /* margin-top: 13%; */
     color: #ffffff;
     background-color: rgb(29,29,29);
     border: none;
@@ -39,8 +44,8 @@ a:hover {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(40,44,47, 0.5);
-    color: #ffffff;
+    background-color: #ff4681;;
+    color: #fff;
 }
 
 
@@ -130,7 +135,7 @@ section {
 }
 
 #particles-js2 {
-    height: 225vh;
+    height: 226vh;
     width: 100vw;
     color: #fff;
     z-index: 0;
@@ -219,16 +224,51 @@ iframe {
 
 
 /*------------------Queries -----------------*/
+@media only screen and (max-width: 1157px) {
+    iframe {
+        border-radius: 7%;
+    }
+    #particles-js2 {
+        height: 233vh;
+    }
+}
+
+@media only screen and (max-width: 1026px) {
+    iframe {
+        border-radius: 9%;
+    }
+    #particles-js2 {
+        height: 240vh;
+    }
+}
+
 @media only screen and (max-width: 935px) {
     .col-7 {
         max-width: 90%;
         margin-left: 5%;
     }
+    .iframe-row {
+        display: inline;
+    }
+    iframe {
+        border-radius: 5%;
+    }
+    iframe .col-7 {
+        max-width: 100%;
+    }
+    .col-5 {
+        padding-top: 5%;
+        margin: auto;
+        max-width: 65%;
+    }
+    #particles-js2 {
+        height: 257vh;
+    }
 }
 
 @media only screen and (max-width: 840px) {
     #particles-js2 {
-        height: 301vh;
+        height: 325vh;
     }
     .newRow {
         display: inline;
@@ -244,9 +284,18 @@ iframe {
     .mt-5 {
         margin-top: 0!important;
     }
+    .fa-github-alt {
+        padding-top: 5%;
+    }
+    iframe {
+        border-radius: 7%;
+    }
 }
 
 @media only screen and (max-width: 660px) {
+    #particles-js2 {
+        height: 317vh;
+    }
     .header-wrapper {
         height: 90%;
     }
@@ -256,9 +305,19 @@ iframe {
     .header-icons i {
         margin-top: 0;        
     }
-}
-/* @media only screen and (max-width: 569px) {
-    .col-4 {
-        max-width: 70%;
+    iframe {
+        border-radius: 9%;
     }
-} */
+    .fa-github-alt {
+        padding-top: 10%;
+    }
+}
+@media only screen and (max-width: 545px) {
+    iframe {
+        border-radius: 55px;
+    }
+    #particles-js2 {
+        height: 320vh;
+    }
+    
+}
