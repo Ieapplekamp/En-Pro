@@ -8,6 +8,7 @@ var checkbox = document.querySelector('#options-hoverpause-checkbox')
 
 var glide = new Glide('.glide', {
     hoverpause: checkbox.checked,
+    type: "carousel",
     arrows: true,
     autoplay: 10000,
     hoverpause: true,
