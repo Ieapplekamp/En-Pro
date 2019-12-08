@@ -4,12 +4,12 @@ html {
 }
 
 body {
-    background-color: rgb(40,44,47);
+    background-color: #20242A;
     font-family: Montserrat;
 }
 
 a {
-    color: white;
+    color: #fff;
 }
 
 .pink {
@@ -57,7 +57,7 @@ svg {
 
 .text-copy {
     fill: none;
-    stroke: white;
+    stroke: #fff;
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
@@ -125,12 +125,16 @@ header {
 header:active {
     cursor: grabbing;
 }
+ 
+.header-icons .fa-file-download {
+    font-size: 28px;
+}
 
 
 /* ------------------Section/About -----------------*/
 section {
-    height: 200%;
-    background: rgb(29,29,29);
+    height: 226vh;
+    background: #20242A;
     background: linear-gradient(350deg, rgba(33,37,43,1) 10%, rgba(29,29,29,1) 75% );
 }
 
@@ -178,6 +182,17 @@ div.about-me {
     justify-content: center;
     flex-wrap: nowrap;
 }
+.dropdown {
+    cursor: pointer;
+}
+.hidden {
+    font-size: .7rem;
+    background: transparent;
+    margin-top: 100%;
+    padding-left: 50%;
+    
+}
+
 
 /* --------------Portfolio Things -------------------*/
 .githubIcons {
@@ -290,6 +305,28 @@ iframe {
     iframe {
         border-radius: 7%;
     }
+    .glide__slide {
+        margin-left: .5%;
+    }
+    .hidden {
+        margin-top: 0;
+        margin-bottom: 100%;
+    }
+    .drop-right {
+        transform: translate3d(300px, -50px, 0px);
+    }
+    .portfolio-descriptions {
+        padding-right: 9%;
+    }
+    .col-5 {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .drop-right {
+        transform: translate3d(250px, -50px, 0px);
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -311,6 +348,9 @@ iframe {
     .fa-github-alt {
         padding-top: 10%;
     }
+    .drop-right {
+        transform: translate3d(220px, -50px, 0px);
+    }
 }
 @media only screen and (max-width: 545px) {
     iframe {
@@ -319,5 +359,24 @@ iframe {
     #particles-js2 {
         height: 320vh;
     }
-    
+    .col-5 {
+        max-width: 80%;
+        padding-left: 5%;
+    }
+    .drop-right {
+        transform: translate3d(190px, -50px, 0px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .col-4 {
+        max-width: 80%;
+        margin-bottom: 10%;
+    }
+    .drop-right {
+        transform: translate3d(0px, 7px, 0px);
+    }
+    .hidden {
+        font-size: .5em;
+    }
 }

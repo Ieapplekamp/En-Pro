@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Glide (portfolio) -->
     <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <!-- Glider (portfolio real) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <!-- Mine -->
     <link rel="stylesheet" type="text/css" href="Assets/Css/reset.css">
     <link rel="stylesheet" type="text/css" href="Assets/Css/styles.css">
@@ -46,7 +44,7 @@
                             <i class="fab fa-linkedin" title="LinkedIn"></i>
                         </a>
                         <a href="# CONTACT"> <!-- This link about needs to be set to a contact sections -->
-                            <i class="fas fa-address-card"></i>
+                            <i class="fas fa-file-download" title="Resume"></i>
                         </a>    
                         <a href="#about-section">
                             <i class="fas fa-chevron-circle-down animated swing slower delay-5s infinite" style="color: #ff4681;"></i>
@@ -128,10 +126,19 @@
                                     <span><a href="mailto: ieapplekamp@gmail.com" target="_blank"><i class="pink fas fa-envelope mr-3"></i>ieapplekamp@gmail.com</a></span>
                                     
                                 </div>
+                                
                                 <div class="about-me" data-aos="fade-up"
                                 data-aos-anchor-placement="top-bottom">
                                     <span><i class="fas fa-map-marker-alt mr-3"></i></span>
-                                    <div>Raleigh, NC</div>
+                                    <div class="dropdown">
+                                        <div data-flip="false" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Raleigh NC
+                                        <!-- </button> -->
+                                            <div class="dropdown-menu dropdown-menu-right hidden" aria-labelledby="dropdownMenuButton">
+                                                <p class="text-center drop-right">I'm incredibly interested in relocating!</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +189,7 @@
                     <!-- Portfolio Section -->
 
                     <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
+                        <div class="glide__track" data-glide-el="track" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <ul class="glide__slides" id="options-hoverpause-checkbox">
                                 <li class="glide__slide">
                                     <div class="row iframe-row glideCursor">
@@ -191,8 +198,9 @@
                                         src="https://immense-wave-44279.herokuapp.com/">
                                         </iframe>
                                         <div class="col-5 d-flex align-items-center"> 
-                                            <div class="d-flex justify-content-center">
-                                                <p class="">
+                                            <div class="d-flex justify-content-center" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom">
+                                                <p class="portfolio-descriptions">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia, laboriosam nihil explicabo optio, iure illum autem eos temporibus aperiam quo nobis fugit harum molestiae ratione, numquam aspernatur consectetur expedita.<br>
                                                     <a href="https://github.com/Ieapplekamp/Project-2" target="_blank">
                                                         <i class="mt-5 d-flex justify-content-center githubIcons fab fa-github-alt"></i>
@@ -203,15 +211,16 @@
                                     </div>
                                 </li>
 
-                                <li class="glide__slide" >
+                                <li class="glide__slide">
                                     <div class="row iframe-row glideCursor">
                                         <iframe id="inlineFrameExample" class="col-7"
                                         height="550"
                                         src="https://lit-brook-68426.herokuapp.com/">
                                         </iframe>
                                         <div class="col-5 d-flex align-items-center"> 
-                                            <div class="d-flex justify-content-center">
-                                                <p class="">
+                                            <div class="d-flex justify-content-center" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom">
+                                                <p class="portfolio-descriptions">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia, laboriosam nihil explicabo optio, iure illum autem eos temporibus aperiam quo nobis fugit harum molestiae ratione, numquam aspernatur consectetur expedita.<br>
                                                     <a href="https://github.com/Ieapplekamp/Burger" target="_blank">
                                                         <i class="mt-5 d-flex justify-content-center githubIcons fab fa-github-alt"></i>
@@ -229,8 +238,8 @@
                                         src="https://glacial-beyond-65720.herokuapp.com/">
                                         </iframe>
                                         <div class="col-5 d-flex align-items-center"> 
-                                            <div class="d-flex justify-content-center">
-                                                <p class="">
+                                            <div class="d-flex justify-content-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                                <p class="portfolio-descriptions">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod mollitia, laboriosam nihil explicabo optio, iure illum autem eos temporibus aperiam quo nobis fugit harum molestiae ratione, numquam aspernatur consectetur expedita.<br>
                                                     <a href="https://github.com/Ieapplekamp/FriendFinder" target="_blank">
                                                         <i class="mt-5 d-flex justify-content-center githubIcons fab fa-github-alt"></i>
@@ -267,6 +276,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js"></script>
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
     <!-- Particles effects -->
@@ -277,7 +287,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- GlideJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-    <!-- <script src="https://unpkg.com/@glidejs/glide"></script> -->
+    <!-- My Glide -->
     <script src="Assets/Javascript/glider.js" type="text/javascript"></script> 
 </body>
 </html>
