@@ -195,6 +195,11 @@ div.about-me {
 
 
 /* --------------Portfolio Things -------------------*/
+.portfolio-descriptions {
+    text-align: center;
+    line-height: 25px;
+}
+
 .githubIcons {
     color: #fff;
     font-size: 1.3em;
@@ -277,13 +282,13 @@ iframe {
         max-width: 65%;
     }
     #particles-js2 {
-        height: 257vh;
+        height: 280vh;
     }
 }
 
 @media only screen and (max-width: 840px) {
     #particles-js2 {
-        height: 325vh;
+        height: 343vh;
     }
     .newRow {
         display: inline;
@@ -306,7 +311,7 @@ iframe {
         border-radius: 7%;
     }
     .glide__slide {
-        margin-left: .5%;
+        margin-left: .6%;
     }
     .hidden {
         margin-top: 0;
@@ -316,6 +321,7 @@ iframe {
         transform: translate3d(300px, -50px, 0px);
     }
     .portfolio-descriptions {
+        line-height: 20px;
         padding-right: 9%;
     }
     .col-5 {
@@ -331,7 +337,7 @@ iframe {
 
 @media only screen and (max-width: 660px) {
     #particles-js2 {
-        height: 317vh;
+        height: 340vh;
     }
     .header-wrapper {
         height: 90%;
@@ -355,9 +361,6 @@ iframe {
 @media only screen and (max-width: 545px) {
     iframe {
         border-radius: 55px;
-    }
-    #particles-js2 {
-        height: 320vh;
     }
     .col-5 {
         max-width: 80%;
